@@ -70,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
               }
               numberField += item;
             }
-          } else if (numberField == "0") {
+          } else if (numberField == "0" || numberField == "") {
             numberField = double.parse(_number).toString();
           } else {
             numberField = _addNumber(numberField, _number);
